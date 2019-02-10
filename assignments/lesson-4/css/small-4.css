@@ -24,7 +24,9 @@ h2{
 header img, .headings {
     display: inline-block;
     vertical-align: middle;
-    margin: 10px
+    margin-left: 10px;
+
+
 }
 
 nav {
@@ -64,3 +66,4 @@ nav a:hover {
 .v li {
 	display: block;
 }
+
