@@ -3,7 +3,49 @@ header img{
     width: 150px;
 }
 
+tbody {
+    
+}
+
+
+.mainheader {
+    width: 100%;
+    height: 20vh;
+  }
+  
+  
+  .mainheader img {
+    height : 100%;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.headertext {
+    margin-left: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.navigation li a{font-size: 1.2rem;
+padding: 1rem;
+}
 .navigation li:first-child {display: none;}
 .navigation li {display: inline-block;margin-right: 1rem;}
 .navigation li a {color: #fff;}
+
+
+.weathersumary{
+    font-size: 1.2rem;
+}
+
+.weatherdetail p.lable{
+    width: 130px;
+    margin-right: .5rem;
+}
 }
