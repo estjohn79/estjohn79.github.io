@@ -30,13 +30,20 @@ h4 {
 }
 
 .contactinfo{
+    margin: auto;
+    max-width:820px;
     background-color:#cae4db;;
-
+    padding: 6px;
+    width: 100%;
 }
 
 footer{
+    margin:auto;
+    max-width:820px;
     background-color:#7A9D96;
     text-align: center; 
+    padding: 6px;
+    width: 100%;
 }
 
 header {
@@ -100,7 +107,7 @@ tbody{
 
 nav {
     margin: 0 auto;
-    max-width: 760px;
+
     background-color:#7A9D96;
     text-align: center;
     box-shadow: 0px 3px 3px gray;

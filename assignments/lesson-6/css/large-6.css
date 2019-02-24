@@ -6,10 +6,17 @@ header img{
 .forecast{
     padding-top: 100px;
     display: inline;
+    margin: 0 auto;
 }
 
+table{
+    margin: 0 auto;
+}
 
-
+.fivedayforecast{
+    text-align: center;
+    align-items: center;
+}
 
 h3{
     text-align: center;

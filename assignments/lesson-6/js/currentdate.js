@@ -8,7 +8,7 @@ let day = today.getDate();
 
 let date = week + ", " + day + " " + month + " " + year;
 
-document.write(date);
+document.getElementById("currentdate").innerHTML=date;
 
 
 
