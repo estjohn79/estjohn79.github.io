@@ -59,6 +59,7 @@
             grid-template-columns:repeat(3,1fr);
             grid-template-rows: auto;
             grid-gap: 15px;
+            padding: 15px;
         }
         
         .gallery__img {
@@ -66,5 +67,7 @@
             height: 100%;
             object-fit: cover;
         }
-
+        .gallery__img:hover{
+            box-shadow: 0 0 50px #333;
+            }
         }
