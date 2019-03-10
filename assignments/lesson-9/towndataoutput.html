@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charst="utf-8">
+        <title>Example JSON Consumption</title>
+        <link rel="stylesheet" href="css/small-9.css">
+    </head>
+    <body>
+        <section>    <header>
+                <img src="images/cloud.png" alt="The cloud">
+                <section class="headings">
+                    <h1>Sunny with a Chance of...</h1>
+                    <div class="subheading">What's it gonna be?</div>
+                </section>
+            </header>
+        
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Menu" onclick="hamburger()">&equiv; Menu</a></li>
+                    <li><a href="towndataoutput.html">Home</a></li>
+                    <li class="active"><a href="preston-9.html" class="active">Preston</a></li>
+                    <li><a href="sodasprings/">Soda Springs</a></li>
+                    <li><a href="fishhaven/">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery-9.html">Gallery</a></li>
+                </ul>
+            </nav></section>
+        <section></section>
+
+        <script>
+          
+          const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+          let request = new XMLHttpRequest();
+          request.open('GET', requestURL);
+          request.responseType = 'json';
+          request.send();
+            
+          request.onload = function() {
+	        let towndata = request.response;
+            let towns = towndata['towns']; 
+            
+            let output = document.querySelector('section');
+
+            towns.forEach(town => {
+                var myArticle = document.createElement('article');
+                let myH3 = document.createElement('h3');
+                let theP = document.createElement('p');
+                let year = document.createElement('p');
+                let pop = document.createElement('p');
+                let rain = document.createElement('p');
+
+                myH3.textContent = town.name;
+                theP.textContent = town.motto;
+                year.textContent = town.yearFounded;
+                pop.textContent = town.currentPopulation;
+                rain.textContent = town.averageRainfall;
+
+                year.style.cssText = 'color:red';
+
+                output.appendChild(myH3);
+                output.appendChild(theP);
+                output.appendChild(year);
+                output.appendChild(pop);
+                output.appendChild(rain);                
+            });    
+          };
+        </script>
+                <div class="contactinfo">
+                        <strong>Cloudy with a Chance of...</strong>
+                        <br> <img class="smalesticon" src="" alt"">30 N 1st E
+                        <br> Preston, ID 83263
+                        <br>
+                        <br>&phone; &nbsp; 999.999.9999
+                        <br>&#9993; &nbsp; cloudywithachanceof@tws
+                        <br><br>
+                        <img class="smallicon" src="images/facebook.png" alt="facebook link">
+                        <img class="smallicon" src="images/pinterest.png" alt="pinterest link">
+                        <img class="smallicon" src="images/twitter.png" alt="twitter link">
+                        <img class="smallicon" src="images/whatsapp.png" alt="whatsapp link">
+                    </div>
+                    <div class="map">
+                    </div>
+                </aside>
+                <footer>
+                    <p class="footer-bar">&copy;2019 | Cloudy with a Chance of... | Emma St. John | </p>
+                    <div id="currentdate"></div>
+                </footer>
+                <script src="js/currentdate.js"></script>
+                <script src="js/hamburger.js"> </script>
+    </body>
+</html>
