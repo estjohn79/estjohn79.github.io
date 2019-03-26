@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+  <title>Sunny with a Chance of... | Town of Preston | Weather Conditions and Forecast</title>
+  <meta name="description"
+    content="Weather Website Portal. Sunny with a Chance of... Current Weather conditions and current events in preston Idaho">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC%7cKalam%7cQuicksand" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small-11.css">
+  <link rel="stylesheet" href="css/medium-11.css" media="(min-width:500px)">
+  <link rel="stylesheet" href="css/large-11.css" media="(min-width:761px)">
+</head>
+
+<body>
+  <header>
+    <img src="images/cloud.png" alt="The cloud">
+    <section class="headings">
+      <h1>Sunny with a Chance of...</h1>
+      <div class="subheading">What's it gonna be?</div>
+    </section>
+  </header>
+
+  <nav>
+    <ul class="navigation">
+      <li><a href="#" title="Menu" onclick="hamburger()">&equiv; Menu</a></li>
+      <li><a href="home.html">Home</a></li>
+      <li ><a href="preston-11.html" >Preston</a></li>
+      <li><a href="sodasprings.html">Soda Springs</a></li>
+      <li><a href="fishhaven.html">Fish Haven</a></li>
+      <li class="active"><a href="stormcenter.html" class="active">Storm Center</a></li>
+      <li><a href="gallery-11.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Storm Center Sumbission</h2>
+    <form method="GET" action="thanks.html">
+      <label for="fullname">Full name: </label>
+      <input type="text" name="fullname" pattern="[A-Za-z\s]{5,}" required>
+      <label for="email">Email: </label>
+      <input type="email" placeholder="youremail@example.com" name="email">
+      <label for="phonenumber">Phone number: </label>
+      <input type="tel" name="phonenumber" required>
+      <label for="zipcode">Zip code: </label>
+      <input type="number" name="zipcode" required>
+      <label for="date">Storm date: </label>
+      <input type="date" name="date">
+      <label for="typeofstorm">Storm Type: </label>
+      <input list="stormtype" name="typeofstorm">
+      <datalist id="stormtype">
+        <option value="Flash Flood">
+        <option value="Hail">
+        <option value="Hurricane">
+        <option value="Thunderstorm">
+        <option value="Tornado">
+      </datalist>
+      <label for="rating">Storm severity: </label>
+      <div><input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)"
+          onchange="adjustRating(this.value)">
+        <span id="ratingvalue">5</span></div>
+      <label for="region">Storm region: </label>
+      <select name="region" size="3">
+        <option selected="true" disabled="disabled">Select Region...</option>
+        <option value="Preston">Preston</option>
+        <option value="Soda Springs">Soda Springs</option>
+        <option value="Fish Haven">Fish Haven</option>
+      </select>
+      <label for="dangerlevel">User in-danger level: </label>
+      <div id="levelofdanger">
+        <input type="radio" id="yes" name="dangerlevel" .value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="dangerlevel" .value="no">
+        <label for="No">No</label>
+        <input type="radio" id="Maybe" name="dangerlevel" .value="Maybe">
+        <label for="Maybe">Maybe</label>
+      </div>
+      <label for="addinfo">Additional information or comments: </label>
+      <textarea name="addinfo" rows="10" cols='30'></textarea>
+      <br>
+      <input type="submit" value="Sumbit Report">
+    </form>
+
+    <section class="map">
+        <div class="contactinfo">
+            <strong>Cloudy with a Chance of...</strong>
+            <br> <img class="smalesticon" src="" alt"">30 N 1st E
+            <br> Preston, ID 83263
+            <br>
+            <br>&phone; &nbsp; 999.999.9999
+            <br>&#9993; &nbsp; cloudywithachanceof@tws
+            <br><br>
+            <img class="smallicon" src="images/facebook.png" alt="facebook link">
+            <img class="smallicon" src="images/pinterest.png" alt="pinterest link">
+            <img class="smallicon" src="images/twitter.png" alt="twitter link">
+            <img class="smallicon" src="images/whatsapp.png" alt="whatsapp link">
+           </div>
+                <iframe
+                    src="https://www.google.com/maps/embed/v1/view?zoom=12&center=42.0963%2C-111.8766&key=AIzaSyAtHIA5X3aZEIqpAxNQPXk7jvUfJDOMJDk"
+                    style="border:0" allowfullscreen></iframe>
+        </section>
+
+  </main>
+ 
+  <footer>
+    <p class="footer-bar">&copy;2019 | Cloudy with a Chance of... | Emma St. John | </p>
+    <div id="currentdate"></div>
+  </footer>
+  <script src="js/currentdate.js"></script>
+  <script src="js/hamburger.js"> </script>
+  <script src="js/adjustrating.js"> </script>
+</body>
+
+</html>
