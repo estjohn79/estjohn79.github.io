@@ -75,7 +75,6 @@
         grid-template-columns: 200px 1fr;
     }
 
-/*---------------------------------Home Page---------------------------*/
 .hero img {
     display: block;
     margin: 0 auto;
@@ -96,22 +95,6 @@
     padding-top: 0;
 }
 
-.homepage h3 {
-    color: #004d4d;
-    font-style: bold;
-    font-size: 25px;
-    margin: 0 auto;
-    padding: 10px;
-    text-align: center;
-}
-
-.homepage div {
-    margin: 0 auto;
-    padding: 5px;
-    width: 220px;
-    word-wrap: break-word;
-    text-align: center;
-}
 
 .jsonmotto {
     font-style: italic;
