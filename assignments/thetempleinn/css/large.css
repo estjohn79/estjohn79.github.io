@@ -1,0 +1,7 @@
+@media only screen and (min-width:761px){
+
+.navigation{display: flex;justify-content: space-around;}
+.navigation li:first-child {display: none;}
+.navigation li {display:flex;margin-right: 1rem;}
+.navigation li a {color: #fff;}
+}

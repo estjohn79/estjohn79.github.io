@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <title>The Temple Inn & Suites</title>
+    <meta name="description"
+        content="The Temple Inn & Suites: hotel, wedding receptions, catering, and temple information">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Kalam|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+
+            <nav class="navbar">
+              <span class="navbar-toggle" id="js-navbar-toggle">
+                      <i class="fas fa-bars"></i>
+                  </span>
+              <a href="index.html" class="logo">The Temple Inn</a>
+              <ul class="main-nav" id="js-menu">
+                <li>
+                  <a href="index.html" class="nav-links">Home</a>
+                </li>
+                <li>
+                  <a href="temples.html" class="nav-links">Temples</a>
+                </li>
+                <li>
+                  <a href="reservation.html" class="nav-links">Reservations</a>
+                </li>
+                <li>
+                  <a href="services.html" class="nav-links">Services</a>
+                </li>
+                <li>
+                  <a href="contact.html" class="nav-links">Contact</a>
+                </li>
+              </ul>
+            </nav>
+
+   
+    <main>
+            <h2>Book your stay:</h2>
+            <form method="GET" action="thanks.html">
+              <label for="fullname">Full name: </label>
+              <input type="text" name="fullname" pattern="[A-Za-z\s]{5,}" required>
+              <label for="email">Email: </label>
+              <input type="email" placeholder="youremail@example.com" name="email">
+              <label for="phonenumber">Phone number: </label>
+              <input type="tel" name="phonenumber" required>
+              <label for="zipcode">Zip code: </label>
+              <input type="number" name="zipcode" required>
+              <label for="date">Beginning date: </label>
+              <input type="date" name="date">
+              <label for="date">End date: </label>
+              <input type="date" name="date">
+              <label for="region">Location: </label>
+              <select name="region" size="3">
+                <option selected="true" disabled="disabled">Select Location...</option>
+                <option value="Idaho Falls">Idaho Falls</option>
+                <option value="Salt Lake">Salt Lake</option>
+                <option value="San Diego">San Diego</option>
+                <option value="Los Angeles">Los Angeles</option>
+              </select>
+              <label for="roomtype">Room Type:</label>
+              <select name="roomtype" size="3">
+                <option selected="true" disabled="disabled">Select Room...</option>
+                <option value="Preston">Queen</option>
+                <option value="Soda Springs">King</option>
+                <option value="Fish Haven">Standard Double</option>
+              </select>
+              <label for="addinfo">Additional information or comments: </label>
+              <textarea name="addinfo" rows="10" cols='30'></textarea>
+              <br>
+              <input type="submit" value="Sumbit Report">
+            </form>
+
+        <section class="map">
+            <div class="contactinfo">
+                <strong>The Temple Inn & Suites</strong>
+                <br> 4800 Montgomery Ln #300
+                <br> Bethesda, MD 20814
+                <br>
+                <br>&phone; &nbsp; 999.999.9999
+                <br>&#9993; &nbsp; thetempleinn@tti.com
+                <br><br>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <script src="js/currentdate.js"></script>
+        <script src="js/hamburger.js"> </script>
+        <script src="js/navigation.js"></script>
+    </footer>>
+</body>
+
+</html>
